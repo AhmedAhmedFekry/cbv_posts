@@ -32,6 +32,7 @@ urlpatterns = [
     path('signup/', SignUpView.as_view(), name="signup"),
     path('api-auth/', include('rest_framework.urls')),
     path('api/', include('api.urls')),
+    path('cbv/', include('cbv.urls')),
     path('rest-auth/', include('rest_auth.urls')
          ), path('rest-auth/registration/', include('rest_auth.registration.urls')),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
